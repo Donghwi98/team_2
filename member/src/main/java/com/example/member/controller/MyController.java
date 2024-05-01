@@ -5,7 +5,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+<<<<<<< HEAD
 import com.example.member.dao.IMemberDao;
+=======
+>>>>>>> bb6cc24070587ae0be8874bc8689db95dd6570f9
 
 @Controller
 public class MyController {
