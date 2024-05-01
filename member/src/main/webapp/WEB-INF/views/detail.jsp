@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Dtail Page</h1>
+    <h1>Detail Page</h1>
     <hr>
     ${dto.mno} / ${dto.id} / ${dto.pw}
     <a href="delete" >삭제하기</a>
