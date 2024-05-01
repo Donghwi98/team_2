@@ -11,7 +11,7 @@
     <h1>List Page</h1>
     <hr>
     <c:forEach var="dto" items="${list}">
-              <a href="detail">${dto.mno}</a> / ${dto.id} / ${dto.pw}
+              <a href="detail?mno=${dto.mno }">${dto.mno}</a> / ${dto.id} / ${dto.pw}
     </c:forEach>
     <a href="writeForm">글 작성하기</a>
 </body>
