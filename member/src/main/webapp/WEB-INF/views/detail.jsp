@@ -10,7 +10,7 @@
     <h1>Detail Page</h1>
     <hr>
     ${dto.mno} / ${dto.id} / ${dto.pw}
-    <a href="delete?mno=${mno}" >삭제하기</a>
+    <a href="delete?mno=${dto.mno}" >삭제하기</a>
     <a href="list">목록으로</a>
 </body>
 </html>
