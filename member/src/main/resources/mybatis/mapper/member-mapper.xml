@@ -13,7 +13,7 @@
 	</select>
 	
 	<insert id="write">
-		INSERT INTO member (id, pw) VALUES(#{id}, #{pw})
+		INSERT INTO member VALUES(MemberDto dto)
 	</insert>
 	
 	<delete id="delete">

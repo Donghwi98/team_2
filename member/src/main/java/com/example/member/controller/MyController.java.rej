@@ -1,0 +1,10 @@
+diff a/member/src/main/java/com/example/member/controller/MyController.java b/member/src/main/java/com/example/member/controller/MyController.java	(rejected hunks)
+@@ -30,7 +30,7 @@
+ 	
+ 	// detail 페이지
+ 	@RequestMapping("/detail")
+-	public String detail(int mno, Model model) {
++	public String detail(@RequestParam("mno") int mno, Model model) {
+ 		model.addAttribute("dto", dao.getDto(mno));
+ 		return "detail";
+ 	}
