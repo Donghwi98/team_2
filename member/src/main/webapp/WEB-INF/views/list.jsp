@@ -13,6 +13,6 @@
     <c:forEach var="dto" items="${list}">
               <a href="detail">${dto.mno}</a> / ${dto.id} / ${dto.pw}
     </c:forEach>
-    <a href="wrtieForm">글 작성하기</a>
+    <a href="writeForm">글 작성하기</a>
 </body>
 </html>
