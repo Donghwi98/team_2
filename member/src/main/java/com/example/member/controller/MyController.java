@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.member.dao.IMemberDao;
 
 @Controller
 public class MyController {
@@ -25,7 +28,7 @@ public class MyController {
 	
 	// detail 페이지
 	@RequestMapping("/detail")
-	public String detail(int mno, Model model) {
+	public String detail(@RequestParam("mno") int mno, Model model) {
 		model.addAttribute("dto", dao.getDto(mno));
 		return "detail";
 	}
@@ -38,14 +41,14 @@ public class MyController {
 	
 	// write
 	@RequestMapping("/write")
-	public String write(String id, String pw) {
+	public String write(@RequestParam("id") String id,@RequestParam("pw") String pw) {
 		dao.write(id, pw);
 		return "redirect:list";
 	}
 	
 	// delete
 	@RequestMapping("/delete")
-	public String delete(int mno) {
+	public String delete(@RequestParam("mno") int mno) {
 		dao.delete(mno);
 		return "redirect:list";
 	}
