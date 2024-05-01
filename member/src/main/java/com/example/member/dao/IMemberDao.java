@@ -12,7 +12,7 @@ public interface IMemberDao {
 
 	public List<MemberDto> getList();
 	public MemberDto getDto(@Param("mno")int mno);
-	public void write(@Param("id") String id, @Param("pw") String pw);
+	public void write(MemberDto member);
 	public void delete(@Param("mno")int mno);
 	
 }
