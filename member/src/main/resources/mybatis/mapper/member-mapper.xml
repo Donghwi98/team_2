@@ -20,4 +20,4 @@
 		DELETE FROM member WHERE mno= #{mno}
 	</delete>
 	
-	</mapper>
+</mapper>

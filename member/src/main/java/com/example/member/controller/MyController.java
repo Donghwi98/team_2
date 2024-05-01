@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.member.dao.IMemberDao;
 
-import com.example.member.dao.IMemberDao;
 
 @Controller
 public class MyController {
